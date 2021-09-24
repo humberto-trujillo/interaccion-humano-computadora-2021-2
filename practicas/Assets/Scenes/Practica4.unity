@@ -453,6 +453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cb35686b84b4650b97997b902193e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canBeSaved: 1
+  inventoryItem: {fileID: 0}
   clips:
   - {fileID: 8300000, guid: 44360483b034c481b8df7dca7b1feeed, type: 3}
   - {fileID: 8300000, guid: 6a0f06a41ca4142949023271669d8715, type: 3}
@@ -824,6 +826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5bc34a4410804ee9ac42a0e1405c0d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canBeSaved: 1
+  inventoryItem: {fileID: 0}
   rotationAxis: {x: 0, y: 1, z: 0}
 --- !u!1001 &746329221
 PrefabInstance:
@@ -894,6 +898,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0271df749728104eac22c3d897fd8ce, type: 3}
+--- !u!1 &776022005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776022007}
+  - component: {fileID: 776022006}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &776022006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776022005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84af745dbd2c042bb8c4f0996ce19263, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: []
+  space: 10
+--- !u!4 &776022007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776022005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.23279642, y: 1.1911825, z: 5.8742304}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820713022
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +954,7 @@ GameObject:
   - component: {fileID: 820713023}
   - component: {fileID: 820713025}
   - component: {fileID: 820713024}
+  - component: {fileID: 820713026}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
@@ -971,6 +1021,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820713022}
   m_CullTransparentMesh: 1
+--- !u!114 &820713026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820713022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 862bebfb31c5f48c7b3827931365021d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &843342785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1505,6 +1567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2081211060, guid: 2a1b93f0915ba4e0e9459ff89d734daa, type: 3}
+      propertyPath: inventoryItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d31d9e87c9914534b36ec56d2d4fc3d, type: 2}
     - target: {fileID: 240652827915635849, guid: 2a1b93f0915ba4e0e9459ff89d734daa, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1825,6 +1891,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2081211060, guid: 2a1b93f0915ba4e0e9459ff89d734daa, type: 3}
+      propertyPath: canBeSaved
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2081211060, guid: 2a1b93f0915ba4e0e9459ff89d734daa, type: 3}
+      propertyPath: inventoryItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 22a37b3b41a204af78b4dc649013e91e, type: 2}
     - target: {fileID: 240652827915635849, guid: 2a1b93f0915ba4e0e9459ff89d734daa, type: 3}
       propertyPath: m_RootOrder
       value: 7
