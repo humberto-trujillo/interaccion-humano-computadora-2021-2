@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eee9bd4208064d55a13558e0509efbc, type: 3}
-  m_Name: RedPotion
+  m_Script: {fileID: 11500000, guid: cad988b1eb26e4b8d94b6102869921ef, type: 3}
+  m_Name: CubicSowrd
   m_EditorClassIdentifier: 
-  inventoryIconSprite: {fileID: 1514827563618153380, guid: abd49d8fb60694f5495a530f10539a18, type: 3}
-  lifeGain: 10
-  magicGain: 10
-  speedGain: 0
-  jumpHeightGain: 1.37
+  inventoryIconSprite: {fileID: 42629776198436581, guid: abd49d8fb60694f5495a530f10539a18, type: 3}
+  prefabToSpawn: {fileID: 677705064089767702, guid: b83de8d39d0214628815ba798fd4533f, type: 3}

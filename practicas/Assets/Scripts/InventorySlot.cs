@@ -5,9 +5,14 @@ public class InventorySlot : MonoBehaviour
 {
     public Item item;
     public Image image;
-    public void TestSlot()
+    public void UseItem()
     {
         Debug.Log("Click a "+ gameObject.name);
+        if (item != null)
+        {
+            item.Use();
+            Inventory.Instance.Remove(item);
+        }
     }
 
     public void Set(Item item)

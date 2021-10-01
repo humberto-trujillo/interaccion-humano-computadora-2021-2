@@ -15,3 +15,5 @@ MonoBehaviour:
   inventoryIconSprite: {fileID: -4948894250961315491, guid: abd49d8fb60694f5495a530f10539a18, type: 3}
   lifeGain: 5
   magicGain: 5
+  speedGain: 6.41
+  jumpHeightGain: 0
